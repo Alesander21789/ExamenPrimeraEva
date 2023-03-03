@@ -48,6 +48,16 @@ class TestCalculadora {
 	@Test
 	void testEsPrimo() {
 		//fail("Not yet implemented");
+		
 	}
 
+	@Test
+	void testSolucciónIncorrecta() {
+		
+		assertThrows(ArithmeticException.class, ()-> {
+			
+			c.solucion1(1, 1, 1);
+		});
+		
+	}
 }
