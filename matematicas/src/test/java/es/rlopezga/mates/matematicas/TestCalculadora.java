@@ -27,16 +27,22 @@ class TestCalculadora {
 	void testSolucion1() {
 		
 		//La primera ecuacion
-		//assertEquals(c.solucion1(1, -5, 6), 3);
+		assertEquals(c.solucion1(1, -5, 6), 3);
 		//La segunda ecuación
-		//assertEquals(c.solucion1(2, -7, 3), 3);
+		assertEquals(c.solucion1(2, -7, 3), 3);
 		//La tercera ecuacion
 		assertEquals(c.solucion1(-1, -7, -10), -5);
 	}
 
 	@Test
 	void testSolucion2() {
-		//fail("Not yet implemented");
+		
+		//La primera ecuación
+		assertEquals(c.solucion2(1, -5, 6), 2,2);
+		//La segunda ecuación
+		assertEquals(c.solucion2(2, -7, 3), 0.5);
+		//La tercera ecuación
+		assertEquals(c.solucion2(-1, -7, -10), -2);
 	}
 
 	@Test
