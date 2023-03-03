@@ -27,9 +27,11 @@ class TestCalculadora {
 	void testSolucion1() {
 		
 		//La primera ecuacion
-		assertEquals(c.solucion1(1, -5, 6), 3);
+		//assertEquals(c.solucion1(1, -5, 6), 3);
 		//La segunda ecuación
 		//assertEquals(c.solucion1(2, -7, 3), 3);
+		//La tercera ecuacion
+		assertEquals(c.solucion1(-1, -7, -10), -5);
 	}
 
 	@Test
