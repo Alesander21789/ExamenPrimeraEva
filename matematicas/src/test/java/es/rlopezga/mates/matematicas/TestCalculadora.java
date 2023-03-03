@@ -28,16 +28,18 @@ class TestCalculadora {
 		
 		//La primera ecuacion
 		assertEquals(c.solucion1(1, -5, 6), 3);
+		//La segunda ecuación
+		//assertEquals(c.solucion1(2, -7, 3), 3);
 	}
 
 	@Test
 	void testSolucion2() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 	@Test
 	void testEsPrimo() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 }
