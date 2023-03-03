@@ -59,7 +59,24 @@ class TestCalculadora {
 		assertNotEquals(c.esPrimo(20), true);
 		
 	}
-
+	@Test
+	void testPrimoIncorrecto() {
+		assertNotEquals(c.esPrimo(15), true);
+		assertNotEquals(c.esPrimo(16), true);
+		assertNotEquals(c.esPrimo(20), true);
+		
+	}
+	
+	@Test
+	void testSolucciónDosIncorrecta() {
+		
+		assertThrows(IllegalArgumentException.class, ()-> {
+			
+			c.esPrimo(1);
+		});
+		
+	}
+	
 	
 	
 	@Test
@@ -71,14 +88,6 @@ class TestCalculadora {
 		});
 		
 	}
-	@Test
-	void testSolucciónDosIncorrecta() {
-		
-		assertThrows(ArithmeticException.class, ()-> {
-			
-			c.solucion2(1, 1, 1);
-		});
-		
-	}
+	
 	
 }
