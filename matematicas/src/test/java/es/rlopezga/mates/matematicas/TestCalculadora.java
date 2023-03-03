@@ -52,7 +52,16 @@ class TestCalculadora {
 		assertEquals(c.esPrimo(19), true);
 		
 	}
+	@Test
+	void testNOPrimo() {
+		assertNotEquals(c.esPrimo(15), true);
+		assertNotEquals(c.esPrimo(16), true);
+		assertNotEquals(c.esPrimo(20), true);
+		
+	}
 
+	
+	
 	@Test
 	void testSolucciónIncorrecta() {
 		
