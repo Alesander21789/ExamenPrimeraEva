@@ -60,4 +60,14 @@ class TestCalculadora {
 		});
 		
 	}
+	@Test
+	void testSolucciónDosIncorrecta() {
+		
+		assertThrows(ArithmeticException.class, ()-> {
+			
+			c.solucion2(1, 1, 1);
+		});
+		
+	}
+	
 }
