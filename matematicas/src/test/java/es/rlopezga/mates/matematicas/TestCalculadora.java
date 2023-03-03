@@ -47,7 +47,9 @@ class TestCalculadora {
 
 	@Test
 	void testEsPrimo() {
-		//fail("Not yet implemented");
+		assertEquals(c.esPrimo(2), true);
+		assertEquals(c.esPrimo(7), true);
+		assertEquals(c.esPrimo(19), true);
 		
 	}
 
